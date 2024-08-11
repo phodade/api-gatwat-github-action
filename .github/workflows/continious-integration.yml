@@ -1,0 +1,17 @@
+name: CI/CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pre-commit-scans:
+    runs-on: ubuntu-latest
+    
+ 
+
+    
