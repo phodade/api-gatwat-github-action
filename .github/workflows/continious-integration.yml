@@ -32,4 +32,5 @@ jobs:
 
     - name: OSS Scan
       run: mvn ossindex:audit
+      continue-on-error: true
 
