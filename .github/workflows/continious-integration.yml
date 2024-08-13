@@ -47,5 +47,6 @@ jobs:
         username: ${{secrets.DOCKER_REGISTRY_USER}}
         password: ${{secrets.fDOCKER_REGISTRY_PAT}}
 
+
     - name: Push docker images
       run: docker push pratikshahodade123/api-gateway-github-action
