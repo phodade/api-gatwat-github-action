@@ -47,5 +47,6 @@ jobs:
 
     - name: Push docker images
       run: |
-        CURRENT_FOLDER_NAME=$(basename $(pwd))
-        docker push ${{secrets.CONTAINER_REGISTRY_URL}}/$CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
+       CURRENT_FOLDER_NAME=$(basename $(pwd))
+       docker push ${{secrets.CONTAINER_REGISTRY_URL}}/$CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
+
